@@ -1,0 +1,27 @@
+/*====== Fonts ======*/
+$font-family-base:  'Scada', sans-serif;
+// $font-family-title: 'Neucha', cursive;
+
+$scale: 1.5; //для вычисления интерлиньяжа
+$scale-sm: 1.2; //для вычисления интерлиньяжа заголовков
+$font-size-base: 18px;
+$font-size-title: 26px; //h1
+
+
+/*====== Margins, paddings ======*/
+$vertical-rythm: $font-size-base * $scale;
+$margin-sec: 40px;
+$padding-fields: 20px;
+$padding-fields-in: 10px;
+
+
+/*====== Bootstrap ======*/
+$bootstrap-sm: 576px;
+$bootstrap-md: 768px;
+$bootstrap-lg: 992px;
+
+
+/*====== Media queries ======*/
+// $mq-desktop: 1280px;
+// $mq-tablet: $bootstrap-md;
+$mq-mobile: 768px;

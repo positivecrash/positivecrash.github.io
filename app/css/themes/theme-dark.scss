@@ -1,0 +1,8 @@
+@import "theme_mixin";
+
+@include theme(
+	$theme-class:               '.theme-dark',
+  
+	$body-background:        #2f2f2f,
+	$body-textcolor:         #f2f2f2
+);

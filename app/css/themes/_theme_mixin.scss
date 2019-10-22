@@ -1,0 +1,94 @@
+@mixin theme (
+
+  $theme-class:               '.theme-light',
+
+  $gray-dark:                 #666666,
+  $gray:                      #9D9D9C,
+  $gray-light:                #e1e1e1,
+  $gray-lightest:             #f7f7f7,
+  $blue:                      #22398E,
+
+  $body-background:           #ffffff,
+  $body-textcolor:            #191a1b,
+  $link-textcolor:            $body-textcolor
+
+){
+
+  #{$theme-class} //body class for theme
+  {
+    background-color: $body-background;
+    color: $body-textcolor;
+
+    a
+      {
+        color: $link-textcolor;
+        border-color: $link-textcolor;
+      }
+    
+    table{
+      tr:hover
+        {
+          td { background-color: darken($body-background, 3%); }
+          td.subtitle { background-color: darken($gray-lightest, 3%) }
+        }
+
+
+      td, th { border-color: $gray-dark; }
+
+      td.subtitle { background-color: $gray-lightest; }
+    }
+
+
+
+   .header-links--item
+    {
+      &, a {
+        background-color: $body-textcolor;
+        color: $body-background;
+      }
+    }
+
+    #header-links{
+      .dropdown-content a.active { background-color: $gray; }
+    }
+
+    #nav-header a { color: $body-textcolor; }
+
+
+    #nav-categories, footer[role='contentinfo']
+      {
+        background-color: $body-textcolor;
+        &, a { color: $body-background; }
+      }
+
+
+
+
+
+    /* tabs */
+    .tabs
+      {
+        border-color: $body-textcolor;
+
+        .active{
+          color: $body-background;
+          background-color: $body-textcolor;
+        }
+      }
+    
+
+
+
+    #kontakt-socials
+      {
+        a {
+          color: $body-background;
+          background-color: $body-textcolor;
+        }
+      }
+
+  }
+
+  
+
+}
